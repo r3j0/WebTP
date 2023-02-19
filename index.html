@@ -3,8 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <title>WebTP</title>
+        <style>
+            body {
+                margin: 0px;
+            }
+
+            #container {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        <script src="time.js"></script>
     </head>
-    <body>
-        index
+    <body onload="showTime()">
+        <div id="container">
+            <div id="left"></div>
+            <div id="center">
+                <div id="time"></div>
+            </div>
+            <div id="right"></div>
+        </div>
     </body>
 </html>
