@@ -1,10 +1,10 @@
-const images = [ "1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg" ];
+const imagesLink = [
+    "1502134249126-9f3755a50d78", // https://unsplash.com/ko/%EC%82%AC%EC%A7%84/0o_GEzyargo
+    "1451187580459-43490279c0fa", // https://unsplash.com/ko/%EC%82%AC%EC%A7%84/Q1p7bh3SHj8
+    "1519608487953-e999c86e7455", // https://unsplash.com/ko/%EC%82%AC%EC%A7%84/7PqRZK6rbaE
+];
 
-//random으로 이미지 나타내기
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+const chosenLink = imagesLink[Math.floor(Math.random() * imagesLink.length)];
 
-// 배경 이미지 넣는 형식 url('img주소')
-const bgImage = `url(bgimg/${chosenImage})`
-
-// body에 추가
+const bgImage = `url(https://images.unsplash.com/photo-${chosenLink}?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80)`
 document.body.style.backgroundImage = bgImage
