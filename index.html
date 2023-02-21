@@ -8,23 +8,30 @@
                 margin: 0px;
             }
 
-            #container {
+            .container {
                 height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+
+                display: grid;
+                grid-template-columns: 1fr auto 1fr;
+                grid-template-rows: 1fr auto 1fr;
             }
         </style>
         
         <script src="script/time.js"></script>
     </head>
     <body onload="showTime()">
-        <div id="container">
-            <div id="left"></div>
-            <div id="center">
-                <div id="time"></div>
-            </div>
-            <div id="right"></div>
+        <div class="container">
+            <div class="item" id="left-up"></div>
+            <div class="item" id="center-up"></div>
+            <div class="item" id="right-up"></div>
+
+            <div class="item" id="left-mid"></div>
+            <div class="item" id="time"></div>
+            <div class="item" id="right-mid"></div>
+
+            <div class="item" id="left-down"></div>
+            <div class="item" id="center-down"></div>
+            <div class="item" id="right-down"></div>
         </div>
 
         <script src="script/bgimg.js"></script>
